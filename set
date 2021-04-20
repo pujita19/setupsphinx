@@ -2,7 +2,7 @@ Docker - sudo apt  install docker.io
 sudo systemctl status docker
 sudo docker run hello-world => find local image, if not found pulls from docker hub
 sudo docker images => all the images we have locally
-sudo apt  install docker-compose
+sudo apt install docker-compose
 docker-compose build
 docker-compose up
 docker-compose up -d
