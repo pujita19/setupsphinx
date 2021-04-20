@@ -1,7 +1,19 @@
-Docker - sudo apt  install docker.io
+Docker: 
+
+sudo apt install docker.io
 sudo systemctl status docker
 sudo docker run hello-world => find local image, if not found pulls from docker hub
 sudo docker images => all the images we have locally
+
+For not to use sudo while using docker:
+
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+logout/login
+sudo service docker restart
+
+Docker-compose:
+
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose build
